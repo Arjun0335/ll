@@ -4,19 +4,18 @@ const App = () => {
   const [showReasons, setShowReasons] = useState(false);
 
   const loveMessages = [
-    "You’re my sunshine ☀️",
-    "You make my heart smile 💖",
-    "I miss your laugh 😢",
-    "I’m really sorry 💔",
+    "You’re my lifeline ",
+    "You make me and my heart smile",
+    "I miss you",
+    "I’m really sorry",
     "You mean everything to me ❤️"
   ];
 
   const reasons = [
-    "Your smile is my peace 😊",
-    "You support me always 🙌",
-    "You make life beautiful 🌸",
-    "You’re my favorite person 🌍",
-    "Because you are you 💕"
+    "Your smile is my peace ",
+    "You support me always ",
+    "You make life beautiful ",
+    "You’re my favorite person",
   ];
 
   return (
