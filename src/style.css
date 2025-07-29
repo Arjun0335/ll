@@ -1,53 +1,73 @@
-import React, { useState } from "react";
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-radius: 16px;
+  box-shadow: 0 0 10px #f0a6ca;
+  text-align: center;
+}
 
-const App = () => {
-  const [showReasons, setShowReasons] = useState(false);
+h1 {
+  color: #d6336c;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
 
-  const loveMessages = [
-    "You’re my sunshine ☀️",
-    "You make my heart smile 💖",
-    "I miss your laugh 😢",
-    "I’m really sorry 💔",
-    "You mean everything to me ❤️"
-  ];
+.main-text {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #444;
+}
 
-  const reasons = [
-    "Your smile is my peace 😊",
-    "You support me always 🙌",
-    "You make life beautiful 🌸",
-    "You’re my favorite person 🌍",
-    "Because you are you 💕"
-  ];
+.bubble {
+  background: #ffe0eb;
+  margin: 8px auto;
+  padding: 10px 20px;
+  width: fit-content;
+  border-radius: 20px;
+  color: #c2185b;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
 
-  return (
-    <div className="container">
-      <h1>I’m Sorry My Love 💌</h1>
-      <p className="main-text">
-        I know I messed up, and I truly regret it. You are my whole world, and
-        I never want to hurt you. Please forgive me...
-      </p>
+.bubble:hover {
+  transform: scale(1.05);
+}
 
-      <div className="messages">
-        {loveMessages.map((msg, index) => (
-          <div key={index} className="bubble">{msg}</div>
-        ))}
-      </div>
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
 
-      <button onClick={() => setShowReasons(!showReasons)}>
-        {showReasons ? "Hide Reasons 🙈" : "Why I Love You ❤️"}
-      </button>
+button:hover {
+  background-color: #ff1a4d;
+}
 
-      {showReasons && (
-        <ul className="reasons">
-          {reasons.map((reason, i) => (
-            <li key={i}>{reason}</li>
-          ))}
-        </ul>
-      )}
+.reasons {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
 
-      <p className="footer">Yours forever 💖</p>
-    </div>
-  );
-};
+.reasons li {
+  background-color: #fff;
+  margin: 8px auto;
+  padding: 8px 16px;
+  border-radius: 12px;
+  color: #880e4f;
+  width: fit-content;
+  font-style: italic;
+}
 
-export default App;
+.footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #999;
+}
